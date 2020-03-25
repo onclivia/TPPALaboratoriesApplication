@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/login"
+        android:title="Login" />
+    <item android:id="@+id/contact"
+        android:title="@string/contact" />
+    <item android:id="@+id/share"
+        android:title="@string/share" />
+    <item android:id="@+id/user_settings"
+        android:title="User Settings"/>
+    <item android:id="@+id/save_internal"
+        android:title="Save items in file"/>
+
+</menu>

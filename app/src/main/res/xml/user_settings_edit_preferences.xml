@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="User Settings">
+        <EditTextPreference
+            android:title="Name"
+            android:key="preferencesName"
+            android:summary="Edit name"/>
+
+        <EditTextPreference
+            android:title="Password"
+            android:key="preferencesPassword"
+            android:summary="Edit password"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="General Settings">
+        <CheckBoxPreference
+            android:title="Notifications"
+            android:key="notifications"
+            android:defaultValue="true"
+            android:summary="Tick or untick to turn on or off notification"/>
+
+        <ListPreference
+            android:title="Background color"
+            android:summary="Set background color"
+            android:key="background_color"
+            android:dialogTitle="Select color"
+            android:entries="@array/colors"
+            android:entryValues="@array/colors_values"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
