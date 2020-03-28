@@ -3,6 +3,8 @@ package com.tppa.listviewdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CheckSensorsActivity extends MainActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,7 @@ public class CheckSensorsActivity extends MainActivity {
 
 
         // Create the adapter to convert the array to views
-        SensorAdapter adapter = new SensorAdapter(this, sensorsList);
+        SensorAdapter adapter = new SensorAdapter(this, sensorsList, sensorManager);
 
         list.setAdapter(adapter);
 
